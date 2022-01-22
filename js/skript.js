@@ -1,49 +1,56 @@
-/*
-function addButton (name,typ,id) {
-    var btn = document.createElement('button')
-    btn.innerHTML 	= name;
-    btn.type 		    = typ;
-    btn.id 			    = id;
-    var Ausgabebereich = document.getElementById('Tests');
-    Ausgabebereich.appendChild(btn);
-    //document.getElementById("Tests").disabled = true;
-    return btn;
-  }
+//Diese Funktion lädt die Seite sobald sie aufgerufen wird neu und sendet eine Bestätigung in der Konsole. Sie benötigt keine Parameter
+      function reloadSite ()
+      {
+        location.reload();
+        console.log("Seite wurde neu geladen")
+      }
+
+/*Diese Funktion fügt einen Button hinzu. Die Funktion benötigt vier Parameter:
+#1: Der Text der auf dem Button erscheinen wird
+#2: Der Typ des Buttons, standartmäßig 'button'
+#3: Die einzigartige ID des Buttons
+#4: Die ID der Nachricht bzw des Bereiches in welchem der Button erstellt werden soll
 */
-
-  function stage1 ()
-  {
-    document.getElementById("test").innerHTML = "Neuer Button: <br> <br>";
-    var b2 = addButton("Test","button","b2");
-    document.getElementById("b2").addEventListener('click', stage2()); // function ohne Klammerpaar
-
-  }
-
-  function stage2 ()
-  {
-    alert("Test");
-
-
-
-  }
-
-
-  function addButton (p1,p2,p3) {
-    var btn = document.createElement('button');
-    btn.innerHTML 	= p1;
-    btn.type 		= p2;
-    btn.id 			= p3;
-    document.body.appendChild(btn);
-    var Ausgabebereich = document.getElementById('test');
-    Ausgabebereich.appendChild(btn);
-    return btn;
-  }
+      function addButton (name,typ,id,area)
+      {
+        var btn = document.createElement('button');
+        btn.innerHTML 	= name;
+        btn.type 		    = typ;
+        btn.id 			    = id;
+        document.body.appendChild(btn);
+        var Ausgabebereich = document.getElementById(area);
+        Ausgabebereich.appendChild(btn);
+        return btn;
+      }
 
 
 
 
-function reloadSite () //Die Funktion lädt die Seite sobald sie gecalled wird neu und sendet eine Bestätigung in der console
-{
-  console.log("Log | Reload erfolgreich")
-  location.reload();
-}
+
+//Diese Funktion ist der Startpunkt des ganzen
+      function stage1 ()
+      {
+        document.getElementById("test2").innerHTML = "Klopf Klopf <br>"
+        var btn2 = addButton("Wer ist da?","button","b2","test");
+        document.getElementById("b2").addEventListener('click', stage2());
+
+      }
+
+      function stage2 ()
+      {
+
+        document.getElementById("btn1").disabled = true; //Deaktiviert den Start Button
+        var button = document.getElementById("btn1");  // Erfasst den Button durch die ID
+        button.remove();                              //
+      }
+
+      function stage3 ()
+      {
+        removeButton('btn1')
+      }
+
+      function  removeButton (p1)
+      {
+        var button = document.getElementById(p1);
+        button.remove();
+      }
