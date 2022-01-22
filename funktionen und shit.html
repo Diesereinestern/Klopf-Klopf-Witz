@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	
+		<head>
+	
+		</head>
+		
+		<script>
+		function stage1 () 
+		{
+			document.getElementById("test").innerHTML = "Neuer Button: <br> <br>";
+			var b2 = addButton("Test","button","b2");
+			document.getElementById("b2").addEventListener('click', stage2); // function ohne Klammerpaar 
+			
+		}
+		
+		function stage2 () 
+		{
+			alert("Test");
+		
+		
+		
+		}
+		
+		
+		function addButton (p1,p2,p3) {
+			var btn = document.createElement('button');
+			btn.innerHTML 	= p1;
+			btn.type 		= p2;
+			btn.id 			= p3;
+			document.body.appendChild(btn);
+			var Ausgabebereich = document.getElementById('test');
+			Ausgabebereich.appendChild(btn);
+			return btn;
+		}
+
+	
+		
+		</script>
+	<body>
+	
+		<center>
+					
+			<main id="main">
+			<button id="b1" onclick="stage1()">Klopf Klopf</button>
+			<p id="test">neuer Button: </p>
+		
+			
+			</main>
+		</center>
+		
+	</body>
+	
+</html>
+
+
+
