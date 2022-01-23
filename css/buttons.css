@@ -1,0 +1,30 @@
+/*In diesem Stylesheet ist das Aussehen der verschiedenen Buttons festgelegt*/
+
+button {
+  color: black;
+  border: 6px solid white;
+  border-radius: 50px;
+  background-color:  darkblue;
+  text-align: center;
+  font-style: normal;
+  font-size: 30px;
+  font-family: Arial black;
+}
+
+#btn2 {
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  background-color:  darkblue;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  font-family: Arial black;
+  margin-top: 9px;
+}
+
+
+#b1 {
+  margin-bottom: 15px;
+
+}

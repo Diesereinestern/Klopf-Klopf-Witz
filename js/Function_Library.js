@@ -35,12 +35,8 @@
 
 
 
+
 //WIP
-
-
-
-
-
 
 /*Diese Funktion entfernt den Timeout einer Timeout Konstante. Sie benötigt die Angabe eines Parameters.
 #1: Der Name der Konstante, welche den Timeout festlegt
