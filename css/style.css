@@ -1,8 +1,8 @@
 /*Stylesheet des Klopf Klopf Witzes. Hier wird das Aussehen der Seite konfigurieren*/
 
 body {
-  background-color: #030b1a;  //Hintergrundfarbe der Seite
-  color: white;              // Farbe der Schrift
+  background-color: #030b1a;  /*Hintergrundfarbe der Seite*/
+  color: white;              /*Generelle Schriftfarbe */
 }
 
 #introduction { /*Style der das Aussehen der Headline definiert*/
