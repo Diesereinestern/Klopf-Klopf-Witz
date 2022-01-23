@@ -1,7 +1,0 @@
-Start               || Stage 1; Button der das Spiel startet --> Printet "Klopf Klopf"
-Klopf Klopf         || Stage 1; Wird in Stage 1 geprintet --> Der Start Button wird gelöscht --> Erstellt den Button "Wer ist da?"
-Wer ist da?         || Stage 2; Sobald der User auf den Button klickt, printet dieser "Wayne"
-Wayne               || Stage 2; Wird in Stage 2 geprintet, entfernt den "Wer ist da?" Button --> Erstellt den Button "Wayne wer?"
-Wayne wer?          || Stage 3; Sobald der Button angeklickt wird --> Printet Wayne interessierts
-Wayne interessierts || Stage 3; Wird in Stage 3 geprintet --> Löscht den Wayne Button und erstellt einen Reset Button
-End                 || Stage 4; Sofern der Button geklickt wird --> location.reload(); zum neuladen der Seite
