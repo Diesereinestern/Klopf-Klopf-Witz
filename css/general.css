@@ -1,37 +1,29 @@
 /*In diesem Stylesheet ist das Aussehen von Elementen wie dem Background, der Überschrift, einiger Paragraphen und Co. festgelegt.*/
 
-body {
-  background-color: #030b1a;  /*Hintergrundfarbe der Seite*/
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+* {
+  background-color: #1d1b24;  /*Hintergrundfarbe der Seite*/
   color: white;              /*Generelle Schriftfarbe */
   text-align: center;
+  font-family:VT323;
 }
 
-#introduction { /*Style der das Aussehen der Headline definiert*/
+#headline { /*Style der das Aussehen der Headline definiert*/
   color: white;
-  border: 17px solid white;
+  border: 10px solid white;
   border-radius: 50px;
-  background-color:  #030b1a;
+  background-color:  #1d1b24;
   text-align: center;
   font-style: normal;
   font-size: 140px;
-  font-family: impact;
+  font-family: VT323;
 }
 
 #hauptblock { /*Definiert allgemeine Einstellungen für den Block in welchem die Paragraphen und Buttons erstellt werden */
-  text-align: center;
-  font-family: impact;
+  font-size: 35px;
 }
 
-#test {
-  color:white;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 40px;
-}
+#Placeholder1 {
 
-#test2 {
-  color:white;
-  margin-top: 2px;
-  margin-bottom: 3px;
-  font-size: 40px;
 }
