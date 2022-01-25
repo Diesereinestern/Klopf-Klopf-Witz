@@ -6,7 +6,7 @@
 #3: Die einzigartige ID des Buttons
 #4: Die ID der Nachricht bzw des Bereiches in welchem der Button erstellt werden soll
 */
-      function addButton (name,type,id,area)
+    function addButton (name,type,id,area)
       {
         var btn = document.createElement('button');
         btn.innerHTML 	= name;
@@ -21,18 +21,17 @@
 /*Diese Funktion entfernt einen Button. Sie benötigt lediglich einen Parameter:
 #1: Gibt die ID des Buttons an welcher gelöscht werden soll.
 */
-      function  removeButton (BtnID)
+    function  removeButton (BtnID)
       {
         var button = document.getElementById(BtnID);
         button.remove();
       }
 
 //Diese Funktion lädt die Seite sobald sie aufgerufen wird neu und sendet eine Bestätigung in der Konsole. Sie benötigt keine Parameter
-            function reloadSite ()
-            {
-              location.reload();
-            }
-
+    function reloadSite ()
+      {
+        location.reload();
+      }
 
 
 
@@ -42,7 +41,7 @@
 #1: Der Name der Konstante, welche den Timeout festlegt
 */
 
-            function stopTimeout (timeoutConstName)
-            {
-              clearTimeout(timeoutConstName);
-            }
+    function stopTimeout (timeoutConstName)
+      {
+        clearTimeout(timeoutConstName);
+      }
