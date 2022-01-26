@@ -32,3 +32,23 @@ button
     margin-top: 20px;
     font-size:25px;
   }
+
+#copyLinkButton
+  {
+    border-radius: 2px;
+  }
+
+#openSidebar
+  {
+    border-radius: 3px;
+  }
+
+#copyDcNameButton
+  {
+    margin-top:0px;
+    border-radius: 2px;
+    border: 5px solid darkblue;
+    background-color:blue;
+    color:white;
+    padding-bottom: 10px;
+  }
