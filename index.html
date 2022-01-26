@@ -3,8 +3,10 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="img\star.ico">
     <link rel="stylesheet" href="css\general.css">
     <link rel="stylesheet" href="css\buttons.css">
+    <link rel="stylesheet" href="css\sidebar.css">
     <title>Klopf Klopf!</title>
   </head>
 
@@ -14,14 +16,30 @@
 
   <body>
 
+    <div>
+      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+
+      <button id='openSidebar' class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    </div>
+<header>
+
+
+
+
+
     <div class="heading">
 
       <h1 id="headline">Interaktiver Klopf Klopf Witz!</h1>
 
     </div>
+</header>
+<main>
 
-
-    <div class="">
 
       <button id="btn1" onclick="stage1()">Start</button>
         <p id="Placeholder1"></p>
@@ -30,10 +48,17 @@
         <p id="Placeholder4"></p>
         <p id="Placeholder5"></p>
       <button id="resetButton"; onclick="confirmReload()"; type="button" name="ResetButton">Reset</button>
+</main>
 
-    </div>
+<footer>
 
 
+      <button id="copyDcNameButton" onclick='copySiteLink()' type="button" name="copyDcNameButton1"> <img id='discordPng' src="img\discord.png"> Copy Discord Name</button>
+      <br>
+      <button id="copyLinkButton" onclick='copyToClipboard()' type="button" name="copyLinkButton1">Copy Site Link</button>
+      <br>
+
+</footer>
   </body>
 
 </html>
