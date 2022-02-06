@@ -33,15 +33,18 @@
         location.reload();
       }
 
-
-
-//WIP
-
-/*Diese Funktion entfernt den Timeout einer Timeout Konstante. Sie benötigt die Angabe eines Parameters.
-#1: Der Name der Konstante, welche den Timeout festlegt
+/*Diese Funktion versteckt ein HTML Element. Es benötigt einen Parameter:
+#1: Gibt die ID des zu versteckenden Elements an.
 */
-
-    function stopTimeout (timeoutConstName)
+    function hideElement (element)
       {
-        clearTimeout(timeoutConstName);
+        document.getElementById(element).style.visibility = "hidden";
+      }
+
+/*Diese Funktion zeigt ein verstecktes HTML Element. Es benötigt einen Parameter:
+#1: Gibt die ID des zu enthüllenden Elements an.
+*/
+    function shwoElement (element)
+      {
+        document.getElementById(element).style.visibility = "visible";
       }
