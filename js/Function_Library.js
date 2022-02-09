@@ -48,3 +48,12 @@
       {
         document.getElementById(element).style.visibility = "visible";
       }
+
+/*Diese Funktion entfernt ein HTML Element. Es benötigt einen Parameter:
+#1: Gibt die ID des zu entfernenden Elements an.
+*/
+    function removeElement (element)
+	     {
+		     var object = document.getElementById(element);
+		     object.remove();
+       }
